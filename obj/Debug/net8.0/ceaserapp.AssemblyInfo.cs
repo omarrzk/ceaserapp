@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ceaserapp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+27408bab1a55a7a38c9bf16d761da8d70e4ec85a")]
 [assembly: System.Reflection.AssemblyProductAttribute("ceaserapp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ceaserapp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
