@@ -1,5 +1,3 @@
-Förstått! Här är en enklare guide för att använda Caesar-chiffer-API med Postman:
-
 ### Kryptera Text:
 
 1. Öppna Postman.
@@ -26,5 +24,3 @@ Förstått! Här är en enklare guide för att använda Caesar-chiffer-API med P
    ```
 4. Tryck på "Send".
 5. I svarsfältet kommer du att få den ursprungliga (dekrypterade) texten.
-
-Genom att följa dessa steg kan du enkelt kryptera och dekryptera text med Caesar-chiffer-API via Postman.
