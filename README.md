@@ -1,31 +1,30 @@
-# CeaserAPP
-
-The goal of this task is to create and implement a complete CI/CD chain for an API project in C# with a focus on encryption and decryption.
-
-För att använda ditt Caesar-chiffer-API på länken [http://ceaser-env.eba-njruw8ix.eu-north-1.elasticbeanstalk.com/](http://ceaser-env.eba-njruw8ix.eu-north-1.elasticbeanstalk.com/), följer du dessa steg:
+Förstått! Här är en enklare guide för att använda Caesar-chiffer-API med Postman:
 
 ### Kryptera Text:
 
-Skicka en POST-förfrågan till länken `/kryptera` med texten du vill kryptera som en textfil. Använd Content-Type-headern för att ange att du skickar text.
-
-Exempel med cURL:
-
-```bash
-curl -X POST http://ceaser-env.eba-njruw8ix.eu-north-1.elasticbeanstalk.com/kryptera \
--H "Content-Type: text/plain" \
--d "Hello, World!"
-```
+1. Öppna Postman.
+2. Skapa en ny POST-förfrågan.
+3. Ange URL: [http://ceaser-env.eba-njruw8ix.eu-north-1.elasticbeanstalk.com/kryptera](http://ceaser-env.eba-njruw8ix.eu-north-1.elasticbeanstalk.com/kryptera)
+4. I "Body"-fliken, välj "raw" och typa in den text du vill kryptera i JSON-format:
+   ```json
+   {
+       "text": "Din_text_att_kryptera"
+   }
+   ```
+5. Tryck på "Send".
+6. I svarsfältet kommer du att få den krypterade texten.
 
 ### Dekryptera Text:
 
-Skicka en POST-förfrågan till länken `/dekryptera` med den krypterade texten du vill dekryptera som en textfil. Använd Content-Type-headern för att ange att du skickar text.
+1. Skapa en ny POST-förfrågan.
+2. Ange URL: [http://ceaser-env.eba-njruw8ix.eu-north-1.elasticbeanstalk.com/dekryptera](http://ceaser-env.eba-njruw8ix.eu-north-1.elasticbeanstalk.com/dekryptera)
+3. I "Body"-fliken, välj "raw" och typa in den krypterade texten i JSON-format:
+   ```json
+   {
+       "text": "Din_krypterade_text_att_dekryptera"
+   }
+   ```
+4. Tryck på "Send".
+5. I svarsfältet kommer du att få den ursprungliga (dekrypterade) texten.
 
-Exempel med cURL:
-
-```bash
-curl -X POST http://ceaser-env.eba-njruw8ix.eu-north-1.elasticbeanstalk.com/dekryptera \
--H "Content-Type: text/plain" \
--d "Klipk ooxqz!"
-```
-
-Dessa förfrågningar returnerar den krypterade respektive dekrypterade texten som svar. Se till att ändra texten i `-d` -flaggan för att matcha den text du vill kryptera eller dekryptera.
+Genom att följa dessa steg kan du enkelt kryptera och dekryptera text med Caesar-chiffer-API via Postman.
